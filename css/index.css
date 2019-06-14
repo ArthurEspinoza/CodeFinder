@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/wallpaper.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+body h1,
+body h3 {
+    text-align: center;
+}
+
+.container {
+    background-color: #F0F0F0;
+    color: #1C8B4D;
+    margin-top: 2%;
+    border: solid 8px #3E0A7F;
+}
+
+#btnB:hover {
+    color: #3E0A7F;
+}
+
+#btnJava,
+#btnCplus {
+    width: 300px;
+    height: 300px;
+    margin: 10% 21% 3% 20%;
+    border: none;
+}
+
+.col-6 h3 {
+    font-weight: bold;
+}
+
+.row h4 {
+    margin-left: 25%;
+}
+
+.barraB {
+    width: 50%;
+    margin: 15px 0 15px 0;
+    border-radius: 10px;
+    border: 3px solid #3747DC;
+    font-weight: bold;
+    text-align: center;
+}
+
+.barraB:focus {
+    border: 3px dotted #5198D5;
+}
+
+#btnB {
+    width: 30%;
+}
