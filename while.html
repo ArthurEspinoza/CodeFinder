@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>C++ - For</title>
+    <title>C++ - While</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/index.css">
@@ -18,16 +18,16 @@
         <h1>Bienvenido a CodeFinder</h1>
         <div class="row" id="lenguaje">
             <div class="col-6" id="variables">
-              <h3>For</h3>
-              <p>Este tipo de bucle es el más elaborado. La sintaxis es:</p>
-              <p>for ( [&ltinicialización&gt]; [&ltcondición&gt] ; [&ltincremento&gt] )  &ltsentencia&gt ;</p>
-              <p>La sentencia es ejecutada repetidamente mientras la condición resulte verdadera, o expresado de otro modo, hasta que la evaluación de la condición resulte falsa.
-              Todas las expresiones son opcionales, y si no se especifica la condición se asume que es verdadera.
+              <h3>While</h3>
+              <p>En C++ se usa la palabra reservada while (que significa "mientras"), y la sintaxis es la siguiente:</p>
+              <p>while (&ltcondición&gt) &ltsentencia&gt</p>
+              <p>La sentencia es ejecutada repetidamente mientras la condición sea verdadera. Si no se especifica condición se asume que es true, y el bucle se ejecutará indefinidamente. Si la primera vez que se evalúa la condición resulta falsa, la sentencia no se ejecutará ninguna vez.</p>
+              <p>Las condiciones son expresiones de tipo booleano.</p>
             </div>
             <div class="col-6">
-              <p>Ejemplos:</p>
-              <p>for(int i = 0; i &lt 100; i = i + 1);</p>
-              <p>for(int i = 100; i &lt 0; i = i - 1);</p>
+              <p>Ejemplo:</p>
+              <p>while (x &lt 100) x = x + 1;</p>
+              <p>Se incrementará el valor de x mientras x sea menor que 100.</p>
             </div>
         </div>
         <button id="btnLeng" onclick="location.href='indiceC.html'">Volver a temas de C++</button>

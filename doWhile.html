@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>C++ - For</title>
+    <title>C++ - While</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/index.css">
@@ -18,16 +18,19 @@
         <h1>Bienvenido a CodeFinder</h1>
         <div class="row" id="lenguaje">
             <div class="col-6" id="variables">
-              <h3>For</h3>
-              <p>Este tipo de bucle es el más elaborado. La sintaxis es:</p>
-              <p>for ( [&ltinicialización&gt]; [&ltcondición&gt] ; [&ltincremento&gt] )  &ltsentencia&gt ;</p>
-              <p>La sentencia es ejecutada repetidamente mientras la condición resulte verdadera, o expresado de otro modo, hasta que la evaluación de la condición resulte falsa.
-              Todas las expresiones son opcionales, y si no se especifica la condición se asume que es verdadera.
+              <h3>Do-While</h3>
+              <p>Esta sentencia va un paso más allá que el while. La sintaxis es la siguiente:</p>
+              <p>do &ltsentencia&gt while(&ltcondicion&gt);</p>
+              <p>La sentencia es ejecutada repetidamente mientras la condición resulte verdadera. Si no se especifica condición se asume que es true, y el bucle se ejecutará indefinidamente.</p>
+              <p>A diferencia del bucle while, la evaluación de la condición se realiza después de ejecutar la sentencia, de modo que ésta se ejecutará al menos una vez.</p>
             </div>
             <div class="col-6">
-              <p>Ejemplos:</p>
-              <p>for(int i = 0; i &lt 100; i = i + 1);</p>
-              <p>for(int i = 100; i &lt 0; i = i - 1);</p>
+              <p>Ejemplo:</p>
+              <p>do</p>
+              <p>x = x + 1;</p>
+              <p>while (x &lt 100);</p>
+              <p>En este bucle se incrementará el valor de x hasta que valga 100.</p>
+              <p>Pero aunque la condición sea falsa, por ejemplo, si x vale inicialmente 200, la sentencia x = x + 1;, se ejecuta primero, y después se verifica la condición.</p>
             </div>
         </div>
         <button id="btnLeng" onclick="location.href='indiceC.html'">Volver a temas de C++</button>
