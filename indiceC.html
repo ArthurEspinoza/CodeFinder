@@ -33,25 +33,25 @@
 <body>
     <div class="container animated bounceInDown">
         <h1>Bienvenido a CodeFinder</h1>
-        <h3>¿Sobre qué lenguaje está buscando?</h3>
+        <h3>Selecciona el tema que deseas consultar:</h3>
         <div class="row" id="lenguaje">
             <div class="col-6">
-                <button id="btnJava" onmouseover="activarJava()" onclick="location.href='indiceJava.html'"><img src="img/javalogo.png" alt="logoJava" class="img-fluid"></button>
-                <h3>JAVA</h3>
-            </div>
-            <div class="col-6">
-                <button id="btnCplus" onmouseover="activarC()" onclick="location.href='indiceC.html'"><img src="img/cplusico.png" alt="cplusplus" class="img-fluid"></button>
+                <button id="btnCplus" onmouseover="activarC()"><img src="img/cplusico.png" alt="cplusplus" class="img-fluid"></button>
                 <h3>C++</h3>
             </div>
-            <h4>Si desea buscar un concepto en especifico, <a id="btnB">pulsa aquí</a></h3>
-        </div>
-        <div id="busqueda">
-            <h3>Escribe el concepto que estas buscando</h3>
-            <input class="barraB" type="text" name="buscar-pal" id="buscar-pal" onkeyup="autocompletado()" placeholder="Escribe el concepto que deseas buscar">
-            <button id="btnLeng">Volver a ver los lenguajes</button>
-            <div>
-                <ul id="demo"></ul>
+            <div class="col-6" id="temas">
+                <h4><ul>
+                  <!-- <li><a href="temas.html#variables">Variables</a></li>
+                  <li><a href="temas.html#funciones">Funciones</a></li> -->
+                  <li>Ciclos</li>
+                    <ul>
+                      <li><a href="for.html">For</a></li>
+                      <li><a href="while.html">While</a></li>
+                      <li><a href="doWhile.html">Do-While</a></li>
+                    </ul>
+                </ul></h4>
             </div>
+            <button id="btnLeng" onclick="location.href='index.html'">Volver a página principal</button>
         </div>
     </div>
 </body>
