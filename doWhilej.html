@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>For - JAVA</title>
+    <title>DoWhile - JAVA</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/index.css">
@@ -22,26 +22,24 @@
             <h1>Bienvenido a CodeFinder</h1>
             <div class="row" id="lenguaje">
                 <div class="col-6">
-                    <h3>For</h3>
+                    <h3>Do-While</h3>
                     <p>
-                        El ciclo For o Para provee una forma concisa de escribir una estructura de repetición. A diferencia del ciclo While los elementos que necesita esta estructura son: una inicialización, una condición y un incremento o decremento. Esta estructura es muy
-                        utilizada cuando se conoce el numero de iteraciones que realizará el ciclo. Su sintaxis es la siguiente:
-                        <br><br> for(inicialización; condición; paso){Codigo}
-                        <br><br> En la sintaxis anterior la inicialización corresponde a una variable que almacenará el valor inicial de donde empezará el ciclo. La condición es aquella evaluación que le permitirá decir al ciclo si continua o no y el
-                        paso es el aumento o decremento que se tenga que realizar.
+                        El ciclo DoWhile o Haz-Mientras es una estructura muy parecida al ciclo While solamente que en esta estructura se evalua la condición booleana despues de cada iteración del ciclo. Su sintaxis es la siguiente:
+                        <br><br> do{ codigo }while( condicion )
+                        <br><br> En la sintaxis anterior la condición es aquella evaluación que le permitirá decir al ciclo si continua o no y el codigo son aquellas sentencias que se van a ejecutar lo que dure el ciclo con la particularidad que esta
+                        estructura nos permite que el codigo deseado se ejecute aunque sea una vez debido a que evalua la condición despues de cada iteración.
                     </p>
                 </div>
                 <div class="col-6" id="variables">
                     <h4>Ejemplo:</h4>
                     <p>
-                        for(int i = 0; i
-                        <=10; i=i + 1){<br>&nbsp;System.out.println(i)<br>}<br> En el ejemplo anterior se está usando un ciclo para imprimir en pantalla un conteo que inicia desde cero hasta 10 incrementando el conteo de uno en uno
+                        int i = 21;<br> do{
+                        <br> System.out.println("Tengo "+i+" años");
+                        <br>}while(i != 21)<br> En el ejemplo anterior se explica la cualidad de esta estructura, primero tenemos una variable que almacena el valor de 21, posteriormente lo imprimimos en pantalla junto con otro mensaje, terminado eso
+                        evalua dicha variable y como cumple la condición el ciclo se detiene pero logramos ejecutar el codigo deseado aunque sea una vez.<br> Si se hubiera colocado de la siguiente manera:<br> while(i != 21){<br> System.out.println("Tengo
+                        "+i+" años");
+                        <br>}<br> En la sintaxis anterior no hubieramos podido ni si quiera imprimir el mensaje debido a que la variable cumple la condición establecida el ciclo ni iniciaría.
                     </p>
                 </div>
                 <button id="btnLeng" onclick="location.href='indiceC.html'">Volver a temas de JAVA</button>
             </div>
-        </div>
-    </body>
-</body>
-
-</html>

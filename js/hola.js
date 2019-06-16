@@ -28,42 +28,62 @@ function autocompletado() {
     var preguntas = [{
             clave: "para",
             tema: "For-C++",
-            link: "index.html"
+            link: "for.html"
         },
         {
             clave: "para",
             tema: "For-JAVA",
-            link: "index.html"
+            link: "forj.html"
         },
         {
             clave: "for",
             tema: "For-C++",
-            link: "index.html"
+            link: "for.html"
         },
         {
             clave: "for",
             tema: "For-JAVA",
-            link: "index.html"
+            link: "forj.html"
         },
         {
-            clave: "si",
-            tema: "If-C++",
-            link: "index.html"
+            clave: "mientras",
+            tema: "While-C++",
+            link: "while.html"
         },
         {
-            clave: "si",
-            tema: "If-JAVA",
-            link: "index.html"
+            clave: "mientras",
+            tema: "While-JAVA",
+            link: "whilej.html"
         },
         {
-            clave: "if",
-            tema: "If-C++",
-            link: "index.html"
+            clave: "while",
+            tema: "While-C++",
+            link: "while.html"
         },
         {
-            clave: "if",
-            tema: "If-JAVA",
-            link: "index.html"
+            clave: "while",
+            tema: "While-JAVA",
+            link: "whilej.html"
+        },
+        {
+            clave: "haz",
+            tema: "DoWhile-C++",
+            link: "dowhile.html"
+        },
+        {
+            clave: "haz",
+            tema: "DoWhile-JAVA",
+            link: "dowhilej.html"
+        },
+        {
+            clave: "dowhile",
+            tema: "DoWhile-C++",
+            link: "dowhile.html"
+        },
+        {
+            clave: "dowhile",
+            tema: "DoWhile-JAVA",
+            link: "dowhilej.html"
         }
     ];
     /*var pal = document.getElementById("buscar-pal").value;
