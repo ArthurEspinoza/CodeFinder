@@ -32,42 +32,35 @@
 
 <body>
     <div class="container animated bounceInDown">
-            <div class="row">
-                    <div class="col-12 encabezado">
-                        <h1>CodeFinder</h1>
-                    </div>
-                    <div class="col-12 encabeza2 ">
-                         <h4 class="encabeza2 mx-auto">Selecciona el tema que deseas consultar  </h4>
-                     </div>
-                    </div>
         <div class="row">
-            <div class="col-6 fondojv">
-                <button id="btnJava"><img src="img/javalogo.png" alt="logoJava" class="img-fluid"></button>
-                <h3>JAVA</h3>
+            <div class="col-12 encabezado">
+                <h1>CodeFinder</h1>
+            </div>
+            <div class="col-12 encabeza2 ">
+                <h4 class="encabeza2 mx-auto">Selecciona el tema que deseas consultar </h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 fondocpp">
+                <button id="btnJava" class="contim-sf"><img src="img/javalogo.png" alt="java" class="img-fluid test-shine imagen-sf"></button>
+                <h3>C++</h3>
             </div>
             <div class="col-6" id="temas">
-                <!-- <button id="btnCplus" onmouseover="activarC()"><img src="img/cplusico.png" alt="cplusplus" class="img-fluid"></button> -->
-                <h4><ul>
-                  <li><a href="documento.html">Enlace a un documento</a></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul></h4>
+                <!-- <li><a href="temas.html#variables">Variables</a></li>
+              <li><a href="temas.html#funciones">Funciones</a></li> -->
+                <h1><i class="fas fa-graduation-cap"></i> Cursos disponibles</h1>
+                <h4>
+                    <a class="lks " href="for.html"> <i class="fas fa-book-open corte1"></i> <text class="corte2"></text>For</text>
+                    </a>
+                </h4>
+                <h4><a class="lks " href="while.html"><i class="fas fa-book-open corte1" ></i> <text class="corte2">While</text></a> </h4>
+                <h4><a class="lks" href="doWhile.html"><i class="fas fa-book-open corte1"></i><text class="corte2"> Do-While</text></a></h4>
             </div>
-            <!-- <h4>Si desea buscar un concepto en especifico, <a id="btnB">pulsa aquí</a></h3> -->
-        
-        <button class="col HOVER" id="btnLeng" onclick="location.href='index.html'"><a id="btnB" class="HOVER col"><span></span>
+
+            <button class="col HOVER" id="btnLeng" onclick="location.href='index.html'"><a id="btnB" class="HOVER col"><span></span>
             <text>Volver al Menu Principal</text></a></button>
         </div>
-        <!-- <div id="busqueda">
-            <h3>Escribe el concepto que estas buscando</h3>
-            <input class="barraB" type="text" name="buscar-pal" id="buscar-pal" onkeyup="autocompletado()" placeholder="Escribe el concepto que deseas buscar">
-            <button id="btnLeng">Volver a ver los lenguajes</button>
-            <div>
-                <ul id="demo"></ul>
-            </div>
-        </div> -->
+
     </div>
 </body>
 
