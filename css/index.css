@@ -2,10 +2,62 @@
     box-sizing: border-box;
 }
 
+.lks{
+color:black;
+
+}
+
+.lks:visited{
+    color:black;
+}
+
+.lks:active{
+   
+    color:black;}
+.lks:hover{
+    text-decoration: none;
+    color:black;
+}
+
+.corte1{
+
+}
+
+.corte2{
+    
+}
+
+
+
+
+a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+#temas{
+    background-color:#bfd7ea;
+    color:black !important;
+}
+
+.cont-smf{
+    background-color:#16db93;
+}
+
+.imagen-sf{
+    background-color: transparent;
+}
+
+#lenguaje{
+    background-color: #16db93;
+}
 body {
-    background-image: url('../img/wallpaper.png');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background: url('../img/wallpaper.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 body h1,
@@ -15,9 +67,9 @@ body h3 {
 
 .container {
     background-color: #F0F0F0;
-    color: #1C8B4D;
-    margin-top: 2%;
-    border: solid 8px #3E0A7F;
+    color: white;
+    margin-top: 10%;
+    
 }
 
 #btnB:hover {
@@ -30,8 +82,13 @@ body h3 {
     height: 300px;
     margin: 10% 21% 3% 20%;
     border: none;
+    background-color:transparent;
 }
 
+.llenar{
+    height:90%;
+    width:90%;
+}
 .col-6 h3 {
     font-weight: bold;
 }
@@ -56,3 +113,108 @@ body h3 {
 #btnB {
     width: 30%;
 }
+
+.fondojv
+{
+    background-color:#af1b3f;
+}
+.fondocpp
+{
+    background-color:#16db93;
+}
+
+.encabezado{
+    background-color:#0b3954;
+}
+
+.encabeza2{
+    background-color:#048ba8;
+    color:white;
+    text-align:center;
+}
+
+.half-rule{
+    width:70%;
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+.grow:hover { 
+    transform: scale(1.1);
+ }
+
+
+
+
+
+
+
+
+@keyframes shake {
+	25% {
+		transform: rotate(calc(var(--angle) * -1));
+	}
+
+	50% {
+		transform: rotate(var(--angle));
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+
+html {
+	font: 100 1.2em sans-serif;
+}
+
+
+.HOVER {
+	--width: 100%;
+	--time: 0.7s;
+	position: relative;
+	display: inline-block;
+	padding: 1em;
+
+	color: white;
+	background: #222;
+	overflow: hidden;
+}
+
+.HOVER text {
+	position: relative;
+	z-index: 5;
+	transition: color var(--time);
+}
+
+.HOVER:hover text {
+	color: #222;
+}
+.HOVER span {
+	border-radius: 100%;
+	position: absolute;
+	display: block;
+	content: "";
+	z-index: 0;
+	width: 0;
+	height: 0;
+
+	background: #fff;
+	transform: translate(-50%, -50%);
+	transition: width var(--time), padding-top var(--time);
+}
+
+.HOVER:hover span {
+	width: calc(var(--width)*2.25);
+	padding-top: calc(var(--width)* 2.25);
+}
+
+.HOVER.FLASH:hover text {
+	color: white;
+}
+.HOVER.FLASH span {
+	background: #ff3b3b;
+}
+
