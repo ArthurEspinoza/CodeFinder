@@ -32,26 +32,34 @@
 
 <body>
     <div class="container animated bounceInDown">
-        <h1>Bienvenido a CodeFinder</h1>
-        <h3>Selecciona el tema que deseas consultar:</h3>
-        <div class="row" id="lenguaje">
-            <div class="col-6">
-                <button id="btnJava" onmouseover="activarJava()"><img src="img/javalogo.png" alt="logoJava" class="img-fluid"></button>
+            <div class="row">
+                    <div class="col-12 encabezado">
+                        <h1>CodeFinder</h1>
+                    </div>
+                    <div class="col-12 encabeza2 ">
+                         <h4 class="encabeza2 mx-auto">Selecciona el tema que deseas consultar  </h4>
+                     </div>
+                    </div>
+        <div class="row">
+            <div class="col-6 fondojv">
+                <button id="btnJava"><img src="img/javalogo.png" alt="logoJava" class="img-fluid"></button>
                 <h3>JAVA</h3>
             </div>
             <div class="col-6" id="temas">
                 <!-- <button id="btnCplus" onmouseover="activarC()"><img src="img/cplusico.png" alt="cplusplus" class="img-fluid"></button> -->
-                <h3><ul>
+                <h4><ul>
                   <li><a href="documento.html">Enlace a un documento</a></li>
                   <li></li>
                   <li></li>
                   <li></li>
                   <li></li>
-                </ul></h3>
+                </ul></h4>
             </div>
             <!-- <h4>Si desea buscar un concepto en especifico, <a id="btnB">pulsa aquí</a></h3> -->
+        
+        <button class="col HOVER" id="btnLeng" onclick="location.href='index.html'"><a id="btnB" class="HOVER col"><span></span>
+            <text>Volver al Menu Principal</text></a></button>
         </div>
-        <button id="btnLeng" onclick="location.href='index.html'">Volver a página principal</button>
         <!-- <div id="busqueda">
             <h3>Escribe el concepto que estas buscando</h3>
             <input class="barraB" type="text" name="buscar-pal" id="buscar-pal" onkeyup="autocompletado()" placeholder="Escribe el concepto que deseas buscar">
