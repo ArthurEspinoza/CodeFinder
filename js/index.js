@@ -1,3 +1,5 @@
+
+
 function activarJava() {
     test = document.getElementById("btnJava");
     test.addEventListener("mouseover", function(event) {
@@ -17,3 +19,5 @@ function activarC() {
         }, 500);
     }, false);
 }
+
+
