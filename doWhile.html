@@ -15,9 +15,13 @@
 </head>
 <body>
     <div class="container animated bounceInDown">
-        <h1>Bienvenido a CodeFinder</h1>
-        <div class="row" id="lenguaje">
-            <div class="col-6" id="variables">
+      <div class="row">
+        <div class="col-12 encabezado">
+            <h1>CodeFinder</h1>
+        </div>
+        </div>
+        <div class="row" id="leccion">
+            <div class="col-6" id="leccion">
               <h3>Do-While</h3>
               <p>Esta sentencia va un paso más allá que el while. La sintaxis es la siguiente:</p>
               <p>do &ltsentencia&gt while(&ltcondicion&gt);</p>
@@ -32,8 +36,9 @@
               <p>En este bucle se incrementará el valor de x hasta que valga 100.</p>
               <p>Pero aunque la condición sea falsa, por ejemplo, si x vale inicialmente 200, la sentencia x = x + 1;, se ejecuta primero, y después se verifica la condición.</p>
             </div>
+            <button class="col HOVER" id="btnLeng" onclick="location.href='indiceC.html'"><a id="btnB" class="HOVER col"><span></span>
+              <text>Volver al Menu de C++</text></a></button>
         </div>
-        <button id="btnLeng" onclick="location.href='indiceC.html'">Volver a temas de C++</button>
     </div>
 </body>
 </html>

@@ -15,8 +15,13 @@
 </head>
 <body>
     <div class="container animated bounceInDown">
-        <h1>Bienvenido a CodeFinder</h1>
-        <div class="row" id="lenguaje">
+      <div class="row encabezado">
+        <div class="col-12 encabezado">
+            <h1>CodeFinder</h1>
+        </div>
+    </div>
+
+        <div class="row" id="leccion">
             <div class="col-6" id="variables">
               <h3>For</h3>
               <p>Este tipo de bucle es el más elaborado. La sintaxis es:</p>
@@ -29,8 +34,10 @@
               <p>for(int i = 0; i &lt 100; i = i + 1);</p>
               <p>for(int i = 100; i &lt 0; i = i - 1);</p>
             </div>
+       
+        <button class="col HOVER" id="btnLeng" onclick="location.href='indiceC.html'"><a id="btnB" class="HOVER col"><span></span>
+          <text>Volver al Menu de C++</text></a></button>
         </div>
-        <button id="btnLeng" onclick="location.href='indiceC.html'">Volver a temas de C++</button>
     </div>
 </body>
 </html>

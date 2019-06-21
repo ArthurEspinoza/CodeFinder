@@ -114,10 +114,13 @@ function autocompletado() {
             if (pal.toLowerCase() == str.toLowerCase()) {
                 var node = document.createElement("LI");
                 var newLink = document.createElement("a");
-                newLink.setAttribute('class', 'resultado');
+                var icon = document.createElement("i");
+                icon.setAttribute('class','fas fa-book-open');
+                newLink.setAttribute('class', 'resultado snip1434 size');                                                        
                 newLink.setAttribute('href', preguntas[indice].link);
                 var textnode = document.createTextNode(preguntas[indice].tema);
                 newLink.appendChild(textnode);
+                newLink.appendChild(icon);
                 node.appendChild(newLink);
                 document.getElementById("demo").appendChild(node);
             }
