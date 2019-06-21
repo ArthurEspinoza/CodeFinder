@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CodeFinder</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/index.css">
@@ -30,37 +31,44 @@
     </script>
 </head>
 
-<body>
+
     <div class="container animated bounceInDown">
-        <h1>Bienvenido a CodeFinder</h1>
-        <h3>Selecciona el tema que deseas consultar:</h3>
-        <div class="row" id="lenguaje">
-            <div class="col-6">
-                <button id="btnJava" onmouseover="activarJava()"><img src="img/javalogo.png" alt="logoJava" class="img-fluid"></button>
+            <div class="row">
+                    <div class="col-12 encabezado">
+                        <h1>CodeFinder</h1>
+                    </div>
+                    <div class="col-12 encabeza2 ">
+                         <h4 class="encabeza2 mx-auto">Selecciona el tema que deseas consultar  </h4>
+                     </div>
+                    </div>
+        <div class="row">
+            <div class="col-6 fondojv">
+                <button id="btnJava"><img src="img/javalogo.png" alt="logoJava" class="img-fluid"></button>
                 <h3>JAVA</h3>
             </div>
             <div class="col-6" id="temas">
-                <!-- <button id="btnCplus" onmouseover="activarC()"><img src="img/cplusico.png" alt="cplusplus" class="img-fluid"></button> -->
-                <h4><ul>
-                <li>Ciclos</li>
-                <ul>
-                  <li><a href="forJ.html">For</a></li>
-                  <li><a href="whileJ.html">While</a></li>
-                  <li><a href="doWhilej.html">Do-While</a></li>
-                </ul>
-
-                <li><a href="objetoJ.html">Objeto</a></li>
-                <li><a href="encapsulacionJ.html">Encapsulación</a></li>
-                <li><a href="clasesJ.html">Clases</a></li>
-
-                <li><a href="herenciaJ.html">Herencia</a></li>
-
-                  
-                </ul></h4>
-            </div>
+                <!-- <li><a href="temas.html#variables">Variables</a></li>
+                <li><a href="temas.html#funciones">Funciones</a></li> -->
+                <div class="cont-list">
+                <h1 class="toptop"><i class="fas fa-graduation-cap "></i> Cursos disponibles</h1>
+                <h2>Ciclos:</h2>
+                   <a class="snip1434" href="forJ.html">For <i class="fas fa-book-open"></i> </a>
+                      <a class="snip1434" href="whileJ.html">While<i class="fas fa-book-open" ></i> </a> 
+                         <a class="snip1434" href="doWhileJ.html">Do-While <i class="fas fa-book-open"></i> </a>
+                 <h2>Conceptos:</h2>
+                       <a class="snip1434" href="objetoJ.html">Objeto<i class="fas fa-book-open"></i> </a>
+                       <a class="snip1434" href="encapsulacionJ.html">Encapsulacion<i class="fas fa-book-open" ></i> </a> 
+                       <a class="snip1434" href="clasesJ.html">Clases<i class="fas fa-book-open"></i> </a>
+                       <a class="snip1434" href="herenciaJ.html">Herencia <i class="fas fa-book-open"></i> </a>
+                </div>
+                </div>
+            
             <!-- <h4>Si desea buscar un concepto en especifico, <a id="btnB">pulsa aquí</a></h3> -->
+        
+                <button class="col HOVER" id="btnLeng" onclick="location.href='index.html'"><a id="btnB" class="HOVER col"><span></span>
+                    <text>Volver al Menu Principal</text></a></button>
+                </div>
         </div>
-        <button id="btnLeng" onclick="location.href='index.html'">Volver a página principal</button>
         <!-- <div id="busqueda">
             <h3>Escribe el concepto que estas buscando</h3>
             <input class="barraB" type="text" name="buscar-pal" id="buscar-pal" onkeyup="autocompletado()" placeholder="Escribe el concepto que deseas buscar">
@@ -69,7 +77,7 @@
                 <ul id="demo"></ul>
             </div>
         </div> -->
-    </div>
-</body>
+    
+
 
 </html>

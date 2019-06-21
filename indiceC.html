@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CodeFinder</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/index.css">
@@ -15,6 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/hola.js"></script>
+    <script src="js/efectos.js"></script>
     <script>
         $(document).ready(function() {
             $('#busqueda').hide();
@@ -32,27 +34,34 @@
 
 <body>
     <div class="container animated bounceInDown">
-        <h1>Bienvenido a CodeFinder</h1>
-        <h3>Selecciona el tema que deseas consultar:</h3>
-        <div class="row" id="lenguaje">
-            <div class="col-6">
-                <button id="btnCplus" onmouseover="activarC()"><img src="img/cplusico.png" alt="cplusplus" class="img-fluid"></button>
+            <div class="row">
+                    <div class="col-12 encabezado">
+                        <h1>CodeFinder</h1>
+                    </div>
+                    <div class="col-12 encabeza2 ">
+                         <h4 class="encabeza2 mx-auto">Selecciona el tema que deseas consultar  </h4>
+                     </div>
+                    </div>
+        <div class="row">
+            <div class="col-6 fondocpp">
+                <button id="btnCplus" class="contim-sf"><img src="img/cplusico.png" alt="cplusplus" class="img-fluid test-shine imagen-sf"></button>
                 <h3>C++</h3>
             </div>
             <div class="col-6" id="temas">
-                <h4><ul>
                   <!-- <li><a href="temas.html#variables">Variables</a></li>
                   <li><a href="temas.html#funciones">Funciones</a></li> -->
-                  <li>Ciclos</li>
-                    <ul>
-                      <li><a href="for.html">For</a></li>
-                      <li><a href="while.html">While</a></li>
-                      <li><a href="doWhile.html">Do-While</a></li>
-                    </ul>
-                </ul></h4>
-            </div>
-            <button id="btnLeng" onclick="location.href='index.html'">Volver a página principal</button>
+                  <div class="cont-list">
+                  <h1 class="toptop"><i class="fas fa-graduation-cap "></i> Cursos disponibles</h1>
+                     <a class="snip1434" href="for.html">For <i class="fas fa-book-open"></i> </a>
+                        <a class="snip1434" href="while.html">While<i class="fas fa-book-open" ></i> </a> 
+                           <a class="snip1434" href="doWhile.html">Do-While <i class="fas fa-book-open"></i> </a>
+                  </div>
+                  </div>
+            
+            <button class="col HOVER" id="btnLeng" onclick="location.href='index.html'"><a id="btnB" class="HOVER col"><span></span>
+                <text>Volver al Menu Principal</text></a></button>
         </div>
+    
     </div>
 </body>
 

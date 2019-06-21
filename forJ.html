@@ -15,12 +15,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body>
+
 
     <body>
         <div class="container animated bounceInDown">
-            <h1>Bienvenido a CodeFinder</h1>
-            <div class="row" id="lenguaje">
+            <div class="row encabezado">
+                <div class="col-12 encabezado">
+                    <h1>CodeFinder</h1>
+                </div>
+            </div>
+            <div class="row" id="leccion">
                 <div class="col-6">
                     <h3>For</h3>
                     <p>
@@ -38,10 +42,11 @@
                         <=10; i=i + 1){<br>&nbsp;System.out.println(i)<br>}<br> En el ejemplo anterior se está usando un ciclo para imprimir en pantalla un conteo que inicia desde cero hasta 10 incrementando el conteo de uno en uno
                     </p>
                 </div>
-                <button id="btnLeng" onclick="location.href='indiceC.html'">Volver a temas de JAVA</button>
+                <button class="col HOVER" id="btnLeng" onclick="location.href='indiceJava.html'"><a id="btnB" class="HOVER col"><span></span>
+                    <text>Volver al Menu de Java</text></a></button>
             </div>
         </div>
     </body>
-</body>
+
 
 </html>
