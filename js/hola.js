@@ -84,6 +84,26 @@ function autocompletado() {
             clave: "dowhile",
             tema: "DoWhile-JAVA",
             link: "dowhilej.html"
+        },
+        {
+            clave: "clases",
+            tema: "Clases-JAVA",
+            link: "clasesJ.html"
+        },
+        {
+            clave: "encapsulación",
+            tema: "Encapsulación-JAVA",
+            link: "encapsulacionJ.html"
+        },
+        {
+            clave: "herencia",
+            tema: "Herencia-JAVA",
+            link: "herenciaJ.html"
+        },
+        {
+            clave: "objeto",
+            tema: "Objeto-JAVA",
+            link: "objetoJ.html"
         }
     ];
     /*var pal = document.getElementById("buscar-pal").value;
@@ -115,8 +135,8 @@ function autocompletado() {
                 var node = document.createElement("LI");
                 var newLink = document.createElement("a");
                 var icon = document.createElement("i");
-                icon.setAttribute('class','fas fa-book-open');
-                newLink.setAttribute('class', 'resultado snip1434 size');                                                        
+                icon.setAttribute('class', 'fas fa-book-open');
+                newLink.setAttribute('class', 'resultado snip1434 size');
                 newLink.setAttribute('href', preguntas[indice].link);
                 var textnode = document.createTextNode(preguntas[indice].tema);
                 newLink.appendChild(textnode);
