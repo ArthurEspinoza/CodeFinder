@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/index.css">
-  
+
     <script src="js/index.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -38,10 +38,11 @@
         <div class="row encabezado">
             <div class="col-12 encabezado">
                 <h1>CodeFinder</h1>
+                <h5>La aplicación que te permite buscar la sintaxis basica de algunos conceptos en el lenguaje que desees</h5>
             </div>
-                <div class="col-12 encabeza2">
-                     <h4 class="mx-auto">¿Sobre qué lenguaje está buscando?</h4>
-                </div>
+            <div class="col-12 encabeza2">
+                <h4 class="mx-auto">¿Sobre qué lenguaje está buscando?</h4>
+            </div>
         </div>
 
         <div class="row" id="lenguaje">
@@ -59,13 +60,13 @@
         <div id="busqueda">
             <h3>Escribe el concepto que deseas buscar</h3>
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Escribe el concepto que deseas buscar" aria-label="Recipient's username" id="buscar-pal" name="buscar-pal"   aria-describedby="button-addon2">
+                <input type="text" class="form-control" placeholder="Escribe el concepto que deseas buscar" aria-label="Recipient's username" id="buscar-pal" name="buscar-pal" aria-describedby="button-addon2">
                 <div class="input-group-append">
-                  <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="autocompletado()">Button</button>
-                  <button class="btn btn-outline-secondary" id="btnLeng">Volver a ver los lenguajes</button>
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="autocompletado()">Button</button>
+                    <button class="btn btn-outline-secondary" id="btnLeng">Volver a ver los lenguajes</button>
                 </div>
-              </div>
-           
+            </div>
+
             <div>
                 <ul id="demo"></ul>
             </div>
