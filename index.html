@@ -24,10 +24,12 @@
             $('#btnB').click(function() {
                 $('#busqueda').show();
                 $('#lenguaje').hide();
+                $('#obj').hide();
             });
             $('#btnLeng').click(function() {
                 $('#lenguaje').show();
                 $('#busqueda').hide();
+                $('#obj').show();
             });
         });
     </script>
@@ -38,7 +40,7 @@
         <div class="row encabezado">
             <div class="col-12 encabezado">
                 <h1>CodeFinder</h1>
-                <h5>La aplicación que te permite buscar la sintaxis basica de algunos conceptos en el lenguaje que desees</h5>
+                <h5 id="obj">La aplicación que te permite buscar la sintaxis básica de algunos conceptos en el lenguaje que desees</h5>
             </div>
             <div class="col-12 encabeza2">
                 <h4 class="mx-auto">¿Sobre qué lenguaje está buscando?</h4>
@@ -62,7 +64,7 @@
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Escribe el concepto que deseas buscar" aria-label="Recipient's username" id="buscar-pal" name="buscar-pal" aria-describedby="button-addon2">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="autocompletado()">Button</button>
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="autocompletado()">Buscar</button>
                     <button class="btn btn-outline-secondary" id="btnLeng">Volver a ver los lenguajes</button>
                 </div>
             </div>
