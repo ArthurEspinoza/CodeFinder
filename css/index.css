@@ -75,6 +75,10 @@ a.effect-underline:hover:after {
     background-color: #16db93;
 }
 
+#obj{
+    text-align:center;
+}
+
 body {
     background: url('../img/wallpaper.png') no-repeat center center fixed;
     -webkit-background-size: cover;
